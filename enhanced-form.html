@@ -1,1 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A complete HTML5 example with structure, media, form, and accessibility features."
+    />
+    <title>HTML5 Complete Example</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Portfolio Page</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#signup">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <main>
+      <!-- About Section -->
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Hello! I'm a web developer passionate about creating accessible and
+          user-friendly websites.
+        </p>
+        <ul>
+          <li>HTML5 & CSS3</li>
+          <li>Responsive Design</li>
+          <li>Accessibility Best Practices</li>
+        </ul>
+      </section>
+
+      <!-- Skills Table -->
+      <section id="skills">
+        <h2>Technical Skills</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Skill</th>
+              <th>Proficiency</th>
+              <th>Years of Experience</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML</td>
+              <td>Advanced</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>Intermediate</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>Intermediate</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Gallery Section -->
+      <section id="gallery">
+        <h2>Project Gallery</h2>
+        <figure>
+          <img
+            src="project-image.jpg"
+            alt="Screenshot of a web project"
+            width="400"
+          />
+          <figcaption>Landing page for a marketing website</figcaption>
+        </figure>
+
+        <video width="400" controls>
+          <source src="demo-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <!-- Form Section -->
+      <section id="signup">
+        <h2>Sign Up for Updates</h2>
+        <form action="#" method="POST" autocomplete="on">
+          <label for="fullname">Full Name:</label><br />
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="John Doe"
+            required
+          /><br /><br />
+
+          <label for="email">Email:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@email.com"
+            required
+          /><br /><br />
+
+          <label for="password">Password:</label><br />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            minlength="6"
+            required
+          /><br /><br />
+
+          <label for="dob">Date of Birth:</label><br />
+          <input type="date" id="dob" name="dob" required /><br /><br />
+
+          <label for="country">Country:</label><br />
+          <select id="country" name="country" required>
+            <option value="">-- Select Country --</option>
+            <option value="ng">Nigeria</option>
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option></select
+          ><br /><br />
+
+          <label>
+            <input type="checkbox" name="agree" required />
+            I agree to the terms and conditions </label
+          ><br /><br />
+
+          <label for="readonly-example">Referral Code (Read-only):</label><br />
+          <input
+            type="text"
+            id="readonly-example"
+            value="REF12345"
+            readonly
+          /><br /><br />
+
+          <input type="submit" value="Sign Up" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
